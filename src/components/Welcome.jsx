@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import pic from '../images/pic.jpg'
 
 const Welcome =() => {
     
@@ -10,8 +11,11 @@ const Welcome =() => {
           <div>
               
               <div className="parent">
+         
+               
+                
                   
-                <img src="pic.jpg" alt=""/>
+                <img className='imgg' src={pic} alt=""/>
                 <div className="text">
                     <h1>Welcome to Doggy Daycare</h1>
                     <h5>Press Button To Start</h5>

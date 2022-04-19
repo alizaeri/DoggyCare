@@ -1,14 +1,14 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Welcome from './components/Welcome';
 import React, { useEffect, useState } from 'react';
-import GetData from './components/GetData';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import List from './components/List';
 import Dog from './components/Dog';
-import { SidebarData } from './components/SidebarData';
+import hund from './images/hund.png'
 import { Link } from 'react-router-dom';
-import Navbar from './components/Navbar';
+
+
 
 
 const url ='https://api.jsonbin.io/b/624d5acbfdd14a0f4681364d/1'
@@ -29,15 +29,8 @@ function App() {
   let currentDog="IEH455006";
   const[sidebar, setsidebar] = useState(false);
   const showSidebar = () =>{setsidebar(!sidebar)}
-  function openSlideMenu() {
-   
-   
-  }
-  function closeSlideMen() {
-   
-    
+  
 
-  }
  
   
 
@@ -51,7 +44,7 @@ function App() {
               <h3>Dogy Care</h3>
             </div>
             <div> 
-              <img className ='logo-image' src="hund.png" alt="" />
+              <img className ='logo-image' src={hund} alt="" />
             </div>
              
 
